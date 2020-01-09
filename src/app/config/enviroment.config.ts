@@ -6,17 +6,22 @@ export const APP_PAGE = [
   },
   {
     title: 'Ganaderia',
-    url: '/list',
+    url: '/ganaderia',
     icon: 'list'
   },
   {
     title: 'Agricultura ',
-    url: '/list',
+    url: '/agricultura',
     icon: 'list'
   },
   {
     title: 'Servicios',
-    url: '/list',
+    url: '/servicios',
+    icon: 'list'
+  },
+  {
+    title: 'welcome',
+    url: '/welcome',
     icon: 'list'
   },
 ];

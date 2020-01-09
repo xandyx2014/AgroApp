@@ -6,14 +6,10 @@
         <ion-card mode="ios">
           <img [src]="slide.img" alt="" class="slide-image">
           <ion-card-header>
-            <ion-card-title color="primary">{{ slide.titulo}}</ion-card-title>
+            <ion-card-title>{{ slide.titulo}}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ion-text color="success">
-              <h3> {{ slide.desc}}</h3>
-             
-            </ion-text>
-            
+            {{ slide.desc}}
           </ion-card-content>
         </ion-card>
       </ion-slide>

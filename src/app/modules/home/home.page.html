@@ -10,60 +10,37 @@
 </ion-header>
 
 <ion-content>
-  <ion-virtual-scroll [items]="arrayTitulos">
-      <ion-card *virtualItem="let item">
-        <ion-card-header>
-          <!-- <ion-card-title color="primary">{{item}} : </ion-card-title> -->
-        <ion-card-subtitle color="primary">{{item}} :</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          <ion-list>
-            <ion-item>
-              <ion-avatar slot="start">
-                <img src="https://i.picsum.photos/id/5/200/200.jpg">
-              </ion-avatar>
-              <ion-label>
-                <ion-label color="primary">Titulo</ion-label>
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>I just upgraded my X-Wing. Next time...</p>
-              </ion-label>
-            </ion-item>
-        
-            <ion-item>
-              <ion-avatar slot="start">
-                <img src="https://i.picsum.photos/id/6/200/200.jpg">
-              </ion-avatar>
-              <ion-label>
-                <ion-label color="primary">Titulo</ion-label>
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>These aren't the droids you're looking for...</p>
-              </ion-label>
-            </ion-item>
-        
-            <ion-item>
-              <ion-avatar slot="start">
-                <img src="https://i.picsum.photos/id/7/200/200.jpg">
-              </ion-avatar>
-              <ion-label>
-                <ion-label color="primary">Titulo</ion-label>
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>I've placed information vital to the survival...</p>
-              </ion-label>
-            </ion-item>
-        
-            <ion-item>
-              <ion-avatar slot="start">
-                <img src="https://i.picsum.photos/id/8/200/200.jpg">
-              </ion-avatar>
-              <ion-label>
-                <ion-label color="primary">Titulo</ion-label>
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Do or do not. There is no try...</p>
-              </ion-label>
-            </ion-item>
-          </ion-list>
-        </ion-card-content>
-      </ion-card>
-  </ion-virtual-scroll> 
-  
+  <ion-card (click)="navigate('ganaderia')">
+    <img src="assets/images/pages/cows.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>subtitle</ion-card-subtitle>
+      <ion-card-title color="secondary">Ganaderia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin
+      Territory in 1836.
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)="navigate('agricultura')">
+    <img src="assets/images/pages/agriculture.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>subtitle</ion-card-subtitle>
+      <ion-card-title color="secondary">Agricultura</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin
+      Territory in 1836.
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)="navigate('servicios')">
+    <img src="assets/images/pages/service.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>subtitle</ion-card-subtitle>
+      <ion-card-title color="secondary">Servicios</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin
+      Territory in 1836.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
